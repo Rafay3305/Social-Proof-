@@ -72,3 +72,22 @@ font-weight: 500;
 .buyer-info p{
     color: var(--clr-primary-300);
 }
+
+.header{
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.header h1{
+    font-size: 4rem;
+    color: var(--clr-primary-800);
+    padding: 2rem 4rem;
+}
+
+.header p{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: var(--clr-neutral-500);
+    font-weight: 500;
+    padding-inline: 2rem;
+}
