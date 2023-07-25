@@ -20,6 +20,9 @@ html{
 
 body{
     font-family: 'League Spartan', sans-serif;
+    background: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
 }
 
 .rating-box{
@@ -35,8 +38,12 @@ color: var(--clr-primary-800);
 font-weight: 800;
 }
 
+.rating-box p{
+    padding-top: 0.6rem;
+}
+
 .review{
-max-width: 450px;
+max-width: 400px;
 background-color: var(--clr-primary-800);
 margin: 2rem;
 border-radius: 1rem;
@@ -81,7 +88,8 @@ font-weight: 500;
 .header h1{
     font-size: 4rem;
     color: var(--clr-primary-800);
-    padding: 2rem 4rem;
+    padding: 2rem ;
+    line-height: 0.8;
 }
 
 .header p{
@@ -90,4 +98,87 @@ font-weight: 500;
     color: var(--clr-neutral-500);
     font-weight: 500;
     padding-inline: 2rem;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    body{
+        background: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: top left, right bottom;
+    }
+    
+    .container{
+        display: flex;
+justify-content: space-evenly;        
+    }
+
+    .testimonials{
+        display: flex;
+justify-content: center;   
+margin-top: 5rem;
+}
+
+    .ratings{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 10rem;
+    }
+
+    .header{
+        text-align: left;
+        width: 30%;
+        margin-top: 5rem;
+    }
+
+    .header h1{
+        font-size: 6rem;
+    }
+
+    .header p{
+        width: 400px;
+    }
+
+    .rating-box{
+        width: 800px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0;
+        margin: 1rem;
+    }
+
+    .rating-box >p{
+        display: inline;
+        padding-left: 3rem;
+        padding-top: 0;
+    }
+
+    .margin-left{
+        --margin-left: 7rem;
+        margin-left: var(--margin-left);
+    }
+
+    .margin-left-2x{
+        margin-left: 14rem;
+    }
+
+    .customer-2{
+        transform: translateY(20px);
+    }
+
+    .customer-3{
+        transform: translateY(40px);
+    }
+
+    .attribution{
+        display: flex;
+        justify-content: center;
+        height: 20vh;
+        align-items: end;
+        }
+
 }
